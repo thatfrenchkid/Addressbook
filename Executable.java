@@ -279,12 +279,12 @@ public class Executable{
 
 			if (addressBook.size() ==0 && book.current.equals ("        New Contact        ")) {
 				int z = 0;
-				JOptionPane.showMessageDialog(null, addressBook.size());
 				add[z] = new NewContact();
 				add[z].setSize(450,400);
 				add[z].setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				add[z].setLocationRelativeTo(null);
 				add[z].setVisible(true);
+				System.out.println(addressBook.size());
 				book.setVisible(false);
 				book.current = "";
 
